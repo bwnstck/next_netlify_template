@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --color-black: #001B2C;
     --color-white: #ffffff;
     --color-text: var(----color-black);
-    --color-background: var(--color-black);
+    --color-background: #14609B;
     --color-cta: #FFC14A;
     --primary-color: #f171a2;
     --secondary-color: #FCAF45;
@@ -30,7 +30,9 @@ const GlobalStyle = createGlobalStyle`
 
   html{
     background-color: var(--color-background);
+    scroll-behavior: smooth;
     }
+
   body {
     margin:0;
     padding:0;
@@ -40,9 +42,9 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
 
     color: #222;
-    
+
     height: 100%;
-    
+
     /* Links */
 
     a {
@@ -62,8 +64,9 @@ const GlobalStyle = createGlobalStyle`
       color: var(--primary-color);
       margin: 1rem 0 .5rem;
       font-weight: 500;
+      text-align: left;
     }
-    
+
     h1{
       font-weight: 700;
       font-size: clamp(2.5rem, 5vw, 4rem);
@@ -77,15 +80,15 @@ const GlobalStyle = createGlobalStyle`
     h4{
       font-size: clamp(1rem, 5vw, 2.5rem);
     }
-    
+
     /* Text */
-    
+
     p {
       font-size: clamp(1rem, 5vw, 1.5rem);
       font-weight: 400;
       color: var(--color-text)
     }
-    
+
     span {
       color: var(--color-text)
     }

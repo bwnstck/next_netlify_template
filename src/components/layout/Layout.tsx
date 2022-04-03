@@ -1,5 +1,8 @@
 import Head from 'next/head'
 
+import FooterWithImpress from './FooterWithImpress'
+import Header from './Header'
+
 import styled from 'styled-components'
 
 type Props = {
@@ -17,7 +20,9 @@ export default function Layout({ children }: Props) {
           <link rel="stylesheet" href="https://use.typekit.net/afc8oob.css" />
           <meta name="theme-color" content="#fff" />
         </Head>
+        <Header />
         <Wrapper>{children}</Wrapper>
+        <FooterWithImpress />
       </div>
       {/* <Script
         async
